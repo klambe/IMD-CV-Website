@@ -1,46 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/interests.css">
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Kevin Lambe</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="education.html">Education</a></li>
-            <li><a href="portfolio.html">Skills</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="contact.html">Contact</a></li>
+
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">Navbar</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="experience.html">Experience</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="interests.html">Interests</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
 </nav>
 
 
 
+<div class="container">
+    <div class="card-deck">
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">Permits</h4>
+                <p class="card-text">
+                    Apply for parking permit
+                    <br> View existing permit requests
+                    <br> Activate Visitor permits
+                    <br>
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
 
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">Vehicles</h4>
+                <p class="card-text">
+                    View and manage your vehicles
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
 
-<h2>Image Modal</h2>
-<p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
-<p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">Parking Tickets</h4>
+                <p class="card-text">
+                    View your parking ticket history
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
+    </div>
+    <div class="card-deck mt-4">
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">Funding Options</h4>
+                <p class="card-text">
+                    Add credit/debit card
+                    <br> Top up Account
+                    <br> Manage cards
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
 
-<img id="myImg" src="img/img_fjords.jpg" alt="Trolltunga, Norway" width="300" height="200">
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">Account History</h4>
+                <p class="card-text">
+                    View all financial transactions on my account
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">User Settings</h4>
+                <p class="card-text">
+                    Edit personal details
+                    <br> Change top-up settings
+                    <br> Change password
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
+    </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
+    <div class="card-deck mt-4">
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">Funding Options</h4>
+                <p class="card-text">
+                    Add credit/debit card
+                    <br> Top up Account
+                    <br> Manage cards
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">Account History</h4>
+                <p class="card-text">
+                    View all financial transactions on my account
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">User Settings</h4>
+                <p class="card-text">
+                    Edit personal details
+                    <br> Change top-up settings
+                    <br> Change password
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck mt-4">
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">Funding Options</h4>
+                <p class="card-text">
+                    Add credit/debit card
+                    <br> Top up Account
+                    <br> Manage cards
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">Account History</h4>
+                <p class="card-text">
+                    View all financial transactions on my account
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="card-block">
+                <h4 class="card-title">User Settings</h4>
+                <p class="card-text">
+                    Edit personal details
+                    <br> Change top-up settings
+                    <br> Change password
+                </p>
+            </div>
+            <div class="card-footer">
+                Link
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="js/myscripts.js"></script>

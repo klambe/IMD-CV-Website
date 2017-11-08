@@ -5,3 +5,7 @@ body {
     padding: 3rem 1.5rem;
     text-align: center;
 }
+.card{
+    card-body: 3em;
+    /*float: right;*/
+}
