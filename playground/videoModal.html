@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="js/test1.js"></script>
+    <script rel="stylesheet" src="css/style.css"></script>
+    <script rel="stylesheet/scss" type="text/css" src="css/videoModal.scss"></script>
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+
+
+<!-- First Container -->
+<div class="container">
+<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Play Video</a>
+
+<!-- Video Modal -->
+<div class="modal videoModal" id="videoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                            src="//player.vimeo.com/video/232185195?autoplay=0&title=0&byline=0&portrait=0&api=1"
+                            id="vimeoIframe"
+                            class="embed-responsive-item"
+                            webkitallowfullscreen mozallowfullscreen allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>Kevin Lambe CA2</p>
+</footer>
+
+</body>
+</html>
