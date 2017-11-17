@@ -1,0 +1,18 @@
+.tech{
+    height: 10em;
+    width: auto;
+}
+
+body {
+    padding-top: 5rem;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.card {
+    card-body: 3em;
+    /*float: right;*/
+}

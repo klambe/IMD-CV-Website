@@ -9,8 +9,6 @@ body {
     card-body: 3em;
     /*float: right;*/
 }
-
-.port-img{
-    height: 8rem;
-    width: auto;
+.card-deck{
+    padding-top: 2em;
 }

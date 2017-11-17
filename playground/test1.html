@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="js/test1.js"></script>
+    <style>
+        body {
+            /*font: 20px Montserrat, sans-serif;*/
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        .bg-1 {
+            background-color: #1a8bbc; /* Blue */
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .main_img {
+            height: 18em;
+        }
+
+        /*.
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }*/
+
+        /* CSS used here will be applied after bootstrap.css */
+
+        body {
+            padding-top: 50px;
+        }
+
+        .thumbnail {
+            position:relative;
+            overflow:hidden;
+        }
+
+        .caption {
+            position:absolute;
+            top:0;
+            right:0;
+            background:rgba(90, 90, 90, 0.75);
+            width:100%;
+            height:100%;
+            padding:2%;
+            display: none;
+            text-align: left;
+            color:#fff !important;
+            z-index:2;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">Navbar</a>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="interests.html">Interests</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Who Am I?</h3>
+    <img src="img/test/bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="" width="350" height="350">
+    <h3>I'm an adventurer</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">What Am I?</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
+    </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Where To Find Me?</h3><br>
+    <div class="row">
+
+
+        <!-- TH1 -->
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="">Thumbnail Headline</h4>
+
+                    <p class="">
+
+                        <a href="#" class="label label-default">Open</a>
+
+                    </p>
+                </div>
+                <img src="http://lorempixel.com/400/300/technics/1/" alt="..." class="">
+            </div>
+        </div>
+
+        <!-- TH2 -->
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="">Thumbnail Headline</h4>
+
+                    <p class="">
+
+                        <a href="#" class="label label-default">Open</a>
+
+                    </p>
+                </div>
+                <img src="http://lorempixel.com/400/300/technics/2/" alt="..." class="">
+            </div>
+        </div>
+
+        <!-- TH2 -->
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="">Thumbnail Headline</h4>
+
+                    <p class="">
+
+                        <a href="#" class="label label-default">Open</a>
+
+                    </p>
+                </div>
+                <img src="http://lorempixel.com/400/300/technics/3/" alt="..." class="">
+            </div>
+        </div>
+
+
+
+
+
+    </div><!--/row -->
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>Kevin Lambe CA2</p>
+</footer>
+
+</body>
+</html>
