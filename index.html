@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+
+
     <style>
         body {
             /*font: 20px Montserrat, sans-serif;*/
@@ -23,14 +27,17 @@
         .margin {
             margin-bottom: 45px;
         }
-
-        .bg-1 {
-            background-color: #1a8bbc; /* Blue */
-            color: #ffffff;
+        .text-kevin h3{
+            color: #2d7788;
         }
 
+        /*.bg-1 {*/
+            /*background-color: #1a8bbc; !* Blue *!*/
+            /*color: #ffffff;*/
+        /*}*/
+
         .bg-2 {
-            background-color: #474e5d; /* Dark Blue */
+            background-color: #2d7788; /* Dark Blue */
             color: #ffffff;
         }
 
@@ -40,8 +47,9 @@
         }
 
         .bg-4 {
-            background-color: #2f2f2f; /* Black Gray */
+            background-color: #2d7788; /* Black Gray */
             color: #fff;
+            height: 8em;
         }
 
         .container-fluid {
@@ -71,33 +79,34 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-company-red fixed-top">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Navbar</a>
+        <a class="navbar-brand" href="index.html"><i class="fa fa-diamond"></i> Kevin Lambe</a>
+
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home </a>
+                    <a class="nav-link" href="index.html"><i class="fa  fa-home"></i> Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="education.html">Education</a>
+                    <a class="nav-link" href="education.html"><i class="fa  fa-graduation-cap"></i> Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="skills.html">Skills</a>
+                    <a class="nav-link" href="skills.html"><i class="fa   fa-certificate"></i> Skills</a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="experience.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="interests.html">Interests</a>
+                    <a class="nav-link" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -115,11 +124,14 @@
         </div>
     </nav>
 
+
     <!-- First Container -->
-    <div class="container-fluid bg-1 text-center">
-        <h3 class="margin">Who Am I?</h3>
-        <img src="img/test/bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="" width="350" height="350">
+    <div class="container-fluid  text-center text-kevin">
+        <h3 class="margin">Kevin Lambe</h3>
+        <img src="img/kevin.jpg" class="img-responsive img-circle margin" style="display:inline" alt="" width="250" height="250">
         <h3>I'm an adventurer</h3>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Download CV</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Email</button>
     </div>
 
     <!-- Second Container -->
