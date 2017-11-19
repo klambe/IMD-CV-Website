@@ -1,3 +1,13 @@
+.bg-company-red{
+    background-color: #2d7788;
+
+}
+
+.bg-company-red a{
+    color: white;
+
+}
+
 
 .ca-pad{
     padding-top: 1em;
@@ -36,3 +46,17 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.container-padding-ca{
+    padding-top: 8em;
+}
+
+.bg-4 {
+    background-color: #2d7788;
+    color: #fff;
+    height: 8em;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}

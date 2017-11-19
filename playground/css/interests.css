@@ -9,6 +9,10 @@
 
  }
 
+.carousel .item{
+    height: 60em;
+}
+
 body {
     padding-top: 5rem;
 }

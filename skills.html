@@ -4,133 +4,205 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/skills.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <link id="theme-style" rel="stylesheet" href="css/skills.css">
+
+    <link rel="stylesheet" type="text/css" href="css/nav-style.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+
+
+
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Kevin Lambe</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li class="active"><a href="skills.html">Skills</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="contact.html">Contact</a></li>
+
+
+
+<nav class="navbar navbar-toggleable-md navbar-dark bg-company-red fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html"><i class="fa fa-diamond"></i> Kevin Lambe</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fa  fa-home"></i> Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="education.html"><i class="fa  fa-graduation-cap"></i> Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="skills.html"><i class="fa   fa-certificate"></i> Skills</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
 </nav>
 
 
-<h2 style="text-align:center">Lightbox</h2>
 
-<div class="row">
-    <div class="column">
-        <img src="img/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="img/img_fjords.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="img/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="img/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-    </div>
-</div>
+<div class="main-wrapper">
 
-<div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
+    <!--beginning of content-->
 
-        <div class="mySlides">
-            <div class="numbertext">1 / 4</div>
-            <img src="img/img_nature_wide.jpg" style="width:100%">
+    <section class="section summary-section">
+        <h2 class="section-title"><i class="fa fa-user"></i>My Skills</h2>
+        <div class="summary">
+            <p>Summarise your Skills here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
+        </div><!--//summary-->
+    </section><!--//section-->
+
+    <section class="section experiences-section">
+        <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+
+        <div class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <h3 class="job-title">Lead Developer</h3>
+                    <div class="time">2015 - Present</div>
+                </div><!--//upper-row-->
+                <div class="company">Startup Hubs, San Francisco</div>
+            </div><!--//meta-->
+            <div class="details">
+                <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+            </div><!--//details-->
+        </div><!--//item-->
+
+        <div class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <h3 class="job-title">Senior Software Engineer</h3>
+                    <div class="time">2014 - 2015</div>
+                </div><!--//upper-row-->
+                <div class="company">Google, London</div>
+            </div><!--//meta-->
+            <div class="details">
+                <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+
+            </div><!--//details-->
+        </div><!--//item-->
+
+        <div class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <h3 class="job-title">UI Developer</h3>
+                    <div class="time">2012 - 2014</div>
+                </div><!--//upper-row-->
+                <div class="company">Amazon, London</div>
+            </div><!--//meta-->
+            <div class="details">
+                <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div><!--//details-->
+        </div><!--//item-->
+
+    </section><!--//section-->
+
+
+
+    <section class="skills-section section">
+        <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+        <div class="skillset">
+            <div class="item">
+                <h3 class="level-title">Python &amp; Django</h3>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="98%">
+                    </div>
+                </div><!--//level-bar-->
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">Javascript &amp; jQuery</h3>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="98%">
+                    </div>
+                </div><!--//level-bar-->
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">Angular</h3>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="98%">
+                    </div>
+                </div><!--//level-bar-->
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">HTML5 &amp; CSS</h3>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="95%">
+                    </div>
+                </div><!--//level-bar-->
+            </div><!--//item-->
+            <div class="item">
+                <h3 class="level-title">Spring &amp; Java</h3>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="60%">
+                    </div>
+                </div><!--//level-bar-->
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">Spring &amp; Java</h3>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="60%">
+                    </div>
+                </div><!--//level-bar-->
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">Spring &amp; Java</h3>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="60%">
+                    </div>
+                </div><!--//level-bar-->
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">Spring &amp; Java</h3>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="60%">
+                    </div>
+                </div><!--//level-bar-->
+            </div><!--//item-->
+
         </div>
+    </section><!--//skills-section-->
 
-        <div class="mySlides">
-            <div class="numbertext">2 / 4</div>
-            <img src="img/img_fjords_wide.jpg" style="width:100%">
-        </div>
+</div><!--//main-body-->
 
-        <div class="mySlides">
-            <div class="numbertext">3 / 4</div>
-            <img src="img/img_mountains_wide.jpg" style="width:100%">
-        </div>
+<!--<script type="text/javascript" src="js/main.js"></script>-->
 
-        <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
-            <img src="img/img_lights_wide.jpg" style="width:100%">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-
-
-        <div class="column">
-            <img class="demo cursor" src="img/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img/img_fjords_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-    </div>
-</div>
-
-<script>
-    function openModal() {
-        document.getElementById('myModal').style.display = "block";
-    }
-
-    function closeModal() {
-        document.getElementById('myModal').style.display = "none";
-    }
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-    }
-</script>
 
 </body>
 </html>

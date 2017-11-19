@@ -3,38 +3,75 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/nav-style.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
 
 
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Kevin Lambe</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li class="active"><a href="contact.html">Contact</a></li>
+<!--begining of nav-->
+<nav class="navbar navbar-toggleable-md navbar-dark bg-company-red fixed-top ca-nav-pad">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html"><i class="fa fa-diamond"></i> Kevin Lambe</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fa  fa-home"></i> Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="education.html"><i class="fa  fa-graduation-cap"></i> Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="skills.html"><i class="fa   fa-certificate"></i> Skills</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
 </nav>
 
-<div id="myDIV" class="form-alert" style="display: none;">
+<!--end of nav-->
+
+<div id="myDIV" class="container-padding-ca form-alert" style="display: none;">
     <div class="alert alert-success">Done! Thank for your message - You will get you an answer as fast as possible!
     </div>
 </div>
 
+<div class="text-center container-padding-ca">
+    <h2>Contact Form</h2>
 
-<h3>Contact Form</h3>
+</div>
+
 
 <div class="container">
     <form action="/action_page.php">
@@ -59,6 +96,22 @@
     <button onclick="myFunction()">Submit</button>
 </div>
 
+<div class="container">
+    <div style="width: 100%">
+        <iframe width="100%" height="600" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&coord=53.291061,-6.3673711&q=Institute%20of%20Technology%20Tallaght+(Contact%20us)&ie=UTF8&t=&z=14&iwloc=A&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        <a href="https://www.mapsdirections.info/en/custom-google-maps/">www.mapsdirections.info</a>
+        by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe>
+    </div>
+    <br />
+
+
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>Kevin Lambe CA2</p>
+</footer>
 <script src="js/myscripts.js"></script>
 
 </body>
