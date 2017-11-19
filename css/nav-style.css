@@ -70,3 +70,17 @@ body {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+.my-ca:hover{
+    background-color: #ffffff;
+    color: #2d7788;
+    border-color: #2d7788;
+
+
+
+}
+.my-ca{
+    background-color: #2d7788;
+    color: white;
+    border-color: white;
+}
