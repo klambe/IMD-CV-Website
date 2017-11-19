@@ -16,3 +16,12 @@ body {
     card-body: 3em;
     /*float: right;*/
 }
+
+
+.ca-card-footer{
+    background-color: #2d7788;
+}
+
+.ca-card-footer a{
+    color: white;
+}
