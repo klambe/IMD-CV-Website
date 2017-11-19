@@ -56,6 +56,16 @@ body {
     height: 8em;
 }
 
+.accordion-header {
+    background-color: #2d7788;
+    color: #fff;
+}
+
+.accordion-header a{
+
+    color: #fff;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
