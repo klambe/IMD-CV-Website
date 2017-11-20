@@ -10,6 +10,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/nav-style.css">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+    <style>
+        .kevin-resize-header{
+            height: 3em;
+        }
+
+
+    </style>
 </head>
 <body>
 
@@ -71,9 +78,9 @@
     <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
     <div id="accordion" role="tablist" aria-multiselectable="true">
         <div class="card">
-            <div class="card-header accordion-header " role="tab" id="headingOne">
+            <div class="card-header accordion-header kevin-resize-header" role="tab" id="headingOne">
                 <h4 class="mb-0">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Year 4 results</a>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="text-header-accord">Year 4 results</a>
                 </h4>
             </div>
             <div id="collapse1" class="panel-collapse collapse in show">
@@ -117,7 +124,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-header accordion-header">
+            <div class="card-header accordion-header kevin-resize-header">
                 <h4 class="mb-0">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Year 3 results</a>
                 </h4>
@@ -162,7 +169,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-header accordion-header">
+            <div class="card-header accordion-header kevin-resize-header">
                 <h4 class="mb-0">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Year 2 results</a>
                 </h4>
@@ -208,7 +215,7 @@
         </div>
 
         <div class="card">
-            <div class="card-header accordion-header">
+            <div class="card-header accordion-header kevin-resize-header">
                 <h4 class="mb-0">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Year 1 results</a>
                 </h4>
