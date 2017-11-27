@@ -91,10 +91,10 @@
     <button class="submit-my-form" aria-label="Try me! Example: input type email">Submit!</button>
 </div>
 <div class="text-center">
-    <img src="img/Map.png" alt="Coderdojo">
+    <img src="img/Map.png" id="toggle-map" alt="Coderdojo">
 </div>
 
-<div class="container">
+<div class="container myMap" style="display:none">
     <div style="width: 100%">
         <iframe width="100%" height="600" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&coord=53.291061,-6.3673711&q=Institute%20of%20Technology%20Tallaght+(Contact%20us)&ie=UTF8&t=&z=14&iwloc=A&output=embed"
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
@@ -167,6 +167,13 @@
             )
         }).catch(swal.noop)
     })
+
+
+    $(document).ready(function(){
+        $("#toggle-map").click(function(){
+            $(".myMap").toggle();
+        });
+    });
 
 </script>
 
