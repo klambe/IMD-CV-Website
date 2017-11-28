@@ -1,0 +1,4 @@
+﻿git config --global user.name "Kevin"
+git config --global user.email "klambe17@gmail.com"
+git config --global http.proxy http://ironweb2.it-tallaght.ie:80
+git config --global https.sslVerify false
