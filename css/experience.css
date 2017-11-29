@@ -1,0 +1,21 @@
+.kevin {
+    color: black;
+    font-size: 26px;
+
+}
+
+
+.container{
+    padding-top: 4em;
+}
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .summary-section{
+        padding-left: 6em;
+    }
+}
+/* Large devices (large desktops, 1200px and up) */
+/* Ex-Large devices (large desktops, 1200px and up) */
