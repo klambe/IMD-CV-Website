@@ -22,6 +22,11 @@ body {
     background-color: #2d7788;
 }
 
+.ca-card-main{
+    background-color: #96bbc3;
+
+}
+
 .ca-card-footer a{
     color: white;
 }
