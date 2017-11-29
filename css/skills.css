@@ -271,12 +271,12 @@ p {
 
 .skillset .level-bar-inner-red {
     height: 12px;
-    background: red;
+    background: #ffcccc;
 }
 
 .skillset .level-bar-inner-blue {
     height: 12px;
-    background: blue;
+    background: #ccccff;
 }
 .footer {
     padding: 30px;
