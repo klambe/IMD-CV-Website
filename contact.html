@@ -16,46 +16,46 @@
 </head>
 <body>
 
-<!--begining of nav-->
-<nav class="navbar navbar-toggleable-md navbar-dark bg-company-red fixed-top ca-nav-pad">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="index.html"><i class="fa fa-diamond"></i> Kevin Lambe</a>
+  <!--begining of nav-->
+  <nav class="navbar navbar-toggleable-md navbar-dark bg-company-red fixed-top ca-nav-pad">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><i class="fa fa-diamond"></i> Kevin Lambe</a>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html"><i class="fa  fa-home"></i> Home </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="education.html"><i class="fa  fa-graduation-cap"></i> Education</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="skills.html"><i class="fa   fa-certificate"></i> Skills</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
-            </li>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html"><i class="fa  fa-home"></i> Home </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="education.html"><i class="fa  fa-graduation-cap"></i> Education</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="skills.html"><i class="fa   fa-certificate"></i> Skills</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
+              </li>
 
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 my-ca" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0 my-ca" type="submit">Search</button>
+          </form>
+      </div>
+  </nav>
 
-<!--end of nav-->
+  <!--end of nav-->
 
 <div id="myDIV" class="container-padding-ca form-alert" style="display: none;">
     <div class="alert alert-success">Done! Thank for your message - You will get you an answer as fast as possible!
@@ -71,25 +71,26 @@
 <div class="container">
     <form action="/action_page.php">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input class="contact-form"type="text" id="fname" name="firstname" placeholder="Your name..">
 
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input class="contact-form" type="text" id="lname" name="lastname" placeholder="Your last name..">
 
         <label for="country">Country</label>
-        <select id="country" name="country">
+        <select class="contact-form" id="country" name="country">
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
         </select>
 
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea class="contact-form" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
 
     </form>
-    <button class="submit-my-form" aria-label="Try me! Example: input type email">Submit!</button>
+    <button class="submit-my-form float-right" aria-label="Try me! Example: input type email">Submit!</button>
 </div>
+
 <div class="text-center">
     <img src="img/Map.png" id="toggle-map" alt="Coderdojo">
 </div>
