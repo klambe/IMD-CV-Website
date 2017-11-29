@@ -56,9 +56,10 @@
             </li>
 
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" id="mySearch2" placeholder="Search"  >
-            <button onclick="myFunction()" class="btn btn-outline-success my-2 my-sm-0" >Search</button>
+        <form class="form-inline my-2 my-lg-0 search" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+            <input name="q" type="hidden" />
+            <input name="qfront" type="search" required class="form-control mr-sm-2 searchField"  id="mySearch2" placeholder="Google Site Search" maxlength="50"   >
+            <button onclick="myFunction()" class="btn btn-outline-success my-2 my-sm-0 my-ca" >Search</button>
         </form>
     </div>
 </nav>
