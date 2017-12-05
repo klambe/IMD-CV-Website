@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/interests.css">
     <link rel="stylesheet" type="text/css" href="css/nav-style.css">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+    <link href="css/hover/hover.css" rel="stylesheet" media="all" >
+
 
 </head>
 <body>
@@ -25,31 +27,32 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html"><i class="fa  fa-home"></i> Home </a>
+                <a class="nav-link hvr-bounce-in" href="index.html"><i class="fa  fa-home"></i> Home </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="education.html"><i class="fa  fa-graduation-cap"></i> Education</a>
+                <a class="nav-link hvr-bounce-in" href="education.html"><i class="fa  fa-graduation-cap"></i> Education</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="skills.html"><i class="fa   fa-certificate"></i> Skills</a>
+                <a class="nav-link hvr-bounce-in" href="skills.html"><i class="fa   fa-certificate"></i> Skills</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
+                <a class="nav-link hvr-bounce-in" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
+                <a class="nav-link hvr-bounce-in" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
+                <a class="nav-link hvr-bounce-in" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
+                <a class="nav-link hvr-bounce-in " href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
             </li>
 
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 my-ca" type="submit">Search</button>
+        <form class="form-inline my-2 my-lg-0 search" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+            <input name="q" type="hidden" />
+            <input name="qfront" type="search" required class="form-control mr-sm-2 searchField"  id="mySearch2" placeholder="Google Search" maxlength="50"   >
+            <button onclick="myFunction()" class="btn btn-outline-success my-2 my-sm-0 my-ca" >Search</button>
         </form>
     </div>
 </nav>
@@ -110,7 +113,7 @@
         <div class="card">
             <img class="card-img-top" src="img/fish.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Card title</h4>
+                <h4 class="card-title">Fish Keeping</h4>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
@@ -118,7 +121,7 @@
         <div class="card">
             <img class="card-img-top" src="img/interests/small/drone.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Card title</h4>
+                <h4 class="card-title">Drones</h4>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
@@ -126,7 +129,7 @@
         <div class="card">
             <img class="card-img-top" src="img/interests/small/teaching.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Card title</h4>
+                <h4 class="card-title">Coderdojo</h4>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
@@ -144,7 +147,7 @@
         <div class="card">
             <img class="card-img-top" src="img/interests/small/pool.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Card title</h4>
+                <h4 class="card-title">Snooker</h4>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
@@ -154,7 +157,7 @@
         <div class="card">
             <img class="card-img-top" src="img/interests/small/tech.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Card title</h4>
+                <h4 class="card-title">Technology</h4>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
@@ -189,6 +192,8 @@
 <footer class="container-fluid bg-4 text-center">
     <p>Kevin Lambe CA2</p>
 </footer>
+
+<script type="text/javascript" src="js/search.js"></script>
 
 </body>
 </html>

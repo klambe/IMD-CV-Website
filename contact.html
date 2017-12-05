@@ -28,41 +28,39 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="index.html"><i class="fa  fa-home"></i> Home </a>
+                  <a class="nav-link hvr-bounce-in" href="index.html"><i class="fa  fa-home"></i> Home </a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="education.html"><i class="fa  fa-graduation-cap"></i> Education</a>
+                  <a class="nav-link hvr-bounce-in" href="education.html"><i class="fa  fa-graduation-cap"></i> Education</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="skills.html"><i class="fa   fa-certificate"></i> Skills</a>
+                  <a class="nav-link hvr-bounce-in" href="skills.html"><i class="fa   fa-certificate"></i> Skills</a>
               </li>
               <li class="nav-item active">
-                  <a class="nav-link" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
+                  <a class="nav-link hvr-bounce-in" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
+                  <a class="nav-link hvr-bounce-in" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
+                  <a class="nav-link hvr-bounce-in" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
+                  <a class="nav-link hvr-bounce-in " href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
               </li>
 
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2 hvr-wobble-vertical" type="text" placeholder="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0 my-ca" type="submit">Search</button>
+          <form class="form-inline my-2 my-lg-0 search" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+              <input name="q" type="hidden" />
+              <input name="qfront" type="search" required class="form-control mr-sm-2 searchField"  id="mySearch2" placeholder="Google Search" maxlength="50"   >
+              <button onclick="myFunction()" class="btn btn-outline-success my-2 my-sm-0 my-ca" >Search</button>
           </form>
       </div>
   </nav>
 
   <!--end of nav-->
 
-<div id="myDIV" class="container-padding-ca form-alert" style="display: none;">
-    <div class="alert alert-success">Done! Thank for your message - You will get you an answer as fast as possible!
-    </div>
-</div>
+
 
 <div class="text-center container-padding-ca">
     <h2>Contact Form</h2>
@@ -93,11 +91,9 @@
     <button class="submit-my-form float-right hvr-wobble-vertical" aria-label="Try me! Example: input type email">Submit!</button>
 </div>
 
-<div class="text-center">
-    <img src="img/Map.png" class="hvr-bounce-in" id="toggle-map" alt="Coderdojo" data-toggle="tooltip" data-placement="top" title="Tooltip on right">
-</div>
 
-<div class="container myMap" style="display:none">
+
+<div class="container myMap" >
     <div style="width: 100%">
         <iframe width="100%" height="600" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&coord=53.291061,-6.3673711&q=Institute%20of%20Technology%20Tallaght+(Contact%20us)&ie=UTF8&t=&z=14&iwloc=A&output=embed"
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
@@ -172,13 +168,16 @@
     })
 
 
-    $(document).ready(function(){
-        $("#toggle-map").click(function(){
-            $(".myMap").toggle();
-        });
-    });
+//    $(document).ready(function(){
+//        $("#toggle-map").click(function(){
+//            $(".myMap").toggle();
+//        });
+//    });
 
 </script>
+
+  <script type="text/javascript" src="js/search.js"></script>
+
 
 </body>
 </html>
