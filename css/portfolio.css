@@ -23,7 +23,9 @@ body {
 }
 
 .ca-card-main{
-    background-color: #96bbc3;
+    border-width: thick;
+    border-style: solid;
+    border-color: #2d7788;
 
 }
 
