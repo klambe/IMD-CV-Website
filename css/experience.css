@@ -10,12 +10,26 @@
 }
 
 /* Small devices (tablets, 768px and up) */
+@media (min-width: 400px) {
+
+    .img-responsive-logo{
+        width: 100%;
+        height: auto;
+    }
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
     .summary-section{
         padding-left: 6em;
     }
+
+    .img-responsive-logo{
+        width: auto;
+        height: 150px;
+    }
 }
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
+
+/*width="auto" height="150"*/
