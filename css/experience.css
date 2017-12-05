@@ -8,6 +8,9 @@
 .container{
     padding-top: 4em;
 }
+.img-responsive-logo{
+    padding-bottom: 2em;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 400px) {

@@ -331,3 +331,9 @@ p {
 .pill-kl{
     padding-top: 3em;
 }
+
+.img-skill-logo{
+    width: auto;
+    height: 150px;
+    padding: 1em;
+}
