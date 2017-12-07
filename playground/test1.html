@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/nav-style.css">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link href="css/hover/hover.css" rel="stylesheet" media="all" >
+    <link href="css/hover/hover.css" rel="stylesheet" media="all">
     <!--<link href="css/mdb.min.css" rel="stylesheet">-->
 
     <script src="js/sweetalert2.all.min.js"></script>
@@ -32,7 +32,8 @@
         .margin {
             margin-bottom: 45px;
         }
-        .text-kevin h3{
+
+        .text-kevin h3 {
             color: #2d7788;
         }
 
@@ -61,6 +62,18 @@
             height: 18em;
         }
 
+        /*delete this just for testing*/
+
+        .centerit {
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: center;
+        }
+
+        #footer {
+            background-color: #2d7788;
+            color: whitesmoke;
+        }
 
     </style>
 </head>
@@ -68,7 +81,9 @@
 
 <!--begining of nav-->
 <nav class=" navbar navbar-toggleable-md navbar-dark bg-company-red fixed-top ca-nav-pad">
-    <button class=" navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <button class=" navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+            aria-label="Toggle navigation">
         <span class=" navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="index.html"><i class="fa fa-diamond"></i> Kevin Lambe</a>
@@ -88,7 +103,8 @@
                 <a class="nav-link hvr-bounce-in" href="experience.html"><i class="fa  fa-briefcase"></i> Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-bounce-in" href="portfolio.html"><i class="fa   fa-folder-open"></i> Portfolio</a>
+                <a class="nav-link hvr-bounce-in" href="portfolio.html"><i class="fa   fa-folder-open"></i>
+                    Portfolio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link hvr-bounce-in" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
@@ -98,10 +114,12 @@
             </li>
 
         </ul>
-        <form class="form-inline my-2 my-lg-0 search" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
-            <input name="q" type="hidden" />
-            <input name="qfront" type="search" required class="form-control mr-sm-2 searchField"  id="mySearch2" placeholder="Google Search" maxlength="50"   >
-            <button onclick="myFunction()" class="btn btn-outline-success my-2 my-sm-0 my-ca" >Search</button>
+        <form class="form-inline my-2 my-lg-0 search" action="http://www.google.com/search" method="get"
+              onSubmit="Gsitesearch(this)">
+            <input name="q" type="hidden"/>
+            <input name="qfront" type="search" required class="form-control mr-sm-2 searchField" id="mySearch2"
+                   placeholder="Google Search" maxlength="50">
+            <button onclick="myFunction()" class="btn btn-outline-success my-2 my-sm-0 my-ca">Search</button>
         </form>
     </div>
 </nav>
@@ -112,16 +130,22 @@
 <!-- First Container -->
 <div class="container-fluid  text-center text-kevin">
     <h3 class="margin">Kevin Lambe</h3>
-    <img src="img/kevin.jpg" class="img-responsive img-circle margin" style="display:inline" alt="" width="250" height="250">
+    <img src="img/kevin.jpg" class="img-responsive img-circle margin" style="display:inline" alt="" width="250"
+         height="250">
     <h3>I'm a Software Engineer</h3>
     <div class="ca-pad">
-        <a class=" hvr-bounce-in btn btn-outline-success my-ca" href="cv/Kevin_Lambe_CV_2017.pdf" target="_blank" download="">Download CV</a>
-        <button class="hvr-bounce-in btn btn-outline-success my-ca my-sm-0 input-type-multiple" type="submit">Email</button>
+        <a class=" hvr-bounce-in btn btn-outline-success my-ca" href="cv/Kevin_Lambe_CV_2017.pdf" target="_blank"
+           download="">Download CV</a>
+        <button class="hvr-bounce-in btn btn-outline-success my-ca my-sm-0 input-type-multiple" type="submit">Email
+        </button>
     </div>
     <div class="ca-pad">
-        <a href="https://github.com/klambe" target="_blank"><i class="kevin-links fa fa-github my-ca hvr-wobble-vertical"></i></a>
-        <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i class="kevin-links fa fa-linkedin my-ca hvr-wobble-vertical"></i></a>
-        <a href="https://twitter.com/" target="_blank"><i class="kevin-links fa fa-twitter my-ca hvr-wobble-vertical"></i></a>
+        <a href="https://github.com/klambe" target="_blank"><i
+                class="kevin-links fa fa-github my-ca hvr-wobble-vertical"></i></a>
+        <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i
+                class="kevin-links fa fa-linkedin my-ca hvr-wobble-vertical"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i
+                class="kevin-links fa fa-twitter my-ca hvr-wobble-vertical"></i></a>
 
     </div>
 </div>
@@ -129,10 +153,16 @@
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
     <h3 class="margin">Summary</h3>
-    <p>I’m currently a fourth year student in ITT Dublin. I have just finished an internship as a software engineer with Oath(formerly AOL). During my time at Oath I learned many different frontend and backend technologies   including   Python,   Ruby,   Javascript   and   AMP.
-        I have developed numerous programs in college using Java SQL, HTML and CSS and in my spare time I have also enrolled in several Udemy courses to further my knowledge in React, NodeJS, Spring, Amazon AWSand   have   complete   some   mini   rest   projects   which   I   have   published   on   my   GitHub   page.
-        I am passionate about computing and volunteer for ITT Coderdojo classes where we teach scratch to children   outside   of   our   class   hours.
-        I have 6+ years’ experience working in a helpdesk role in a first line support position with a great emphasis on   teamwork   to   bring   the   best   quality   support   to   our   customers.
+    <p>I’m currently a fourth year student in ITT Dublin. I have just finished an internship as a software engineer with
+        Oath(formerly AOL). During my time at Oath I learned many different frontend and backend technologies including
+        Python, Ruby, Javascript and AMP.
+        I have developed numerous programs in college using Java SQL, HTML and CSS and in my spare time I have also
+        enrolled in several Udemy courses to further my knowledge in React, NodeJS, Spring, Amazon AWSand have complete
+        some mini rest projects which I have published on my GitHub page.
+        I am passionate about computing and volunteer for ITT Coderdojo classes where we teach scratch to children
+        outside of our class hours.
+        I have 6+ years’ experience working in a helpdesk role in a first line support position with a great emphasis on
+        teamwork to bring the best quality support to our customers.
     </p>
 
 </div>
@@ -142,29 +172,80 @@
     <h3 class="margin">Where To Find Me?</h3><br>
     <div class="row">
         <div class="col-sm-4">
-            <p>In ITT we cover a range of topics and technologies If you would like to know more about the modules I have completed in college and my Grades please click below.
+            <p>In ITT we cover a range of topics and technologies If you would like to know more about the modules I
+                have completed in college and my Grades please click below.
             </p>
-            <a href="education.html"><img class="main_img" src="img/test/EDUCATION.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+            <a href="education.html"><img class="main_img" src="img/test/EDUCATION.jpg" class="img-responsive margin"
+                                          style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4">
             <p>I have completed many projects as part of my course as well as learning some languages and
                 frameworks in my own time please click below for more details.</p>
-            <a href="portfolio.html"><img class="main_img" src="img/test/portfolio.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+            <a href="portfolio.html"><img class="main_img" src="img/test/portfolio.jpg" class="img-responsive margin"
+                                          style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="interests.html"><img class="main_img" src="img/test/hobbies.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+            <a href="interests.html"><img class="main_img" src="img/test/hobbies.jpg" class="img-responsive margin"
+                                          style="width:100%" alt="Image"></a>
         </div>
 
     </div>
 </div>
 
 <!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-    <p>Kevin Lambe CA2</p>
-</footer>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row" style="padding-top:25px">
+            <div class="col-md-4 col-lg-4 centerit">
+                <div class="ca-pad">
+                    <a href="https://github.com/klambe" target="_blank"><i
+                            class="kevin-links fa fa-github my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i
+                            class="kevin-links fa fa-linkedin my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i
+                            class="kevin-links fa fa-twitter my-ca hvr-wobble-vertical"></i></a>
 
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 centerit">
+                <div class="ca-pad">
+                    <a href="https://github.com/klambe" target="_blank"><i
+                            class="kevin-links fa fa-github my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i
+                            class="kevin-links fa fa-linkedin my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i
+                            class="kevin-links fa fa-twitter my-ca hvr-wobble-vertical"></i></a>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 centerit">
+                <div class="ca-pad">
+                    <a href="https://github.com/klambe" target="_blank"><i
+                            class="kevin-links fa fa-github my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i
+                            class="kevin-links fa fa-linkedin my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i
+                            class="kevin-links fa fa-twitter my-ca hvr-wobble-vertical"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-12 centerit" style="margin-top:50px;margin-bottom:10px;">
+            <h4>Kevin Lambe CA2 IMD</h4>
+        </div>
+        <div class="col-md-12 col-lg-12 centerit">
+            <br/>
+            <script type="text/javascript"
+                    src="http://counter8.01counter.com/private/counter.js?c=ca1518a01892ce23eeb69fda9c69f256"></script>
+            <noscript><a href="http://www.freecounterstat.com" title="counter for website"><img
+                    src="http://counter8.01counter.com/private/freecounterstat.php?c=ca1518a01892ce23eeb69fda9c69f256"
+                    border="0" title="counter for website" alt="counter for website"></a>
+            </noscript>
+        </div>
+    </div>
+</footer>
 <script>
     $('.input-type-email').on('click', function () {
         swal({
@@ -192,9 +273,6 @@
             swal('Submitted!', 'Thank you!', 'success')
         }).catch(swal.noop)
     })
-
-
-
 
 
     $('.input-type-multiple').on('click', function () {
