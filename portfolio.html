@@ -97,7 +97,7 @@
 
         <div class="card text-center">
             <div class="card-block ca-card-main">
-                <img class="card-img-top tech" src="img/portfolio/tableau.png" alt="Card image">
+                <img class="card-img-top tech" src="img/portfolio/tableau.png" alt="Card image" data-toggle="modal" data-target="#myModal">
                 <h4 class="card-title">Tableau</h4>
                 <p class="card-text">
                     View my Tableau project
@@ -259,10 +259,46 @@
     </div>
 </div>
 
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Tableau Dashboard</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <script type='text/javascript' src='https://dub01.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                <div class='tableauPlaceholder' style='width: 1000px; height: 827px;'><object class='tableauViz' width='1000' height='827' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fdub01.online.tableau.com%2F' /> <param name='embed_code_version' value='2' />
+                    <param name='site_root' value='&#47;t&#47;itttableauca1nct' /><param name='name' value='NCTCa1ITTallaght&#47;Dashboard1' />
+                    <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' />
+                    <param name='showShareOptions' value='true' /></object></div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+<!--end of modal-->
+
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
     <p>Kevin Lambe CA2</p>
 </footer>
+
+
 
 
 <script src="js/myscripts.js"></script>
