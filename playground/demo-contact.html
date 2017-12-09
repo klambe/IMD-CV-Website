@@ -15,8 +15,19 @@
     <script src="js/sweetalert2.all.min.js"></script>
 
     <style>
-
-
+        .jumbotron {
+            background: #358CCE;
+            color: #FFF;
+            border-radius: 0px;
+        }
+        .jumbotron-sm { padding-top: 24px;
+            padding-bottom: 24px; }
+        .jumbotron small {
+            color: #FFF;
+        }
+        .h1 small {
+            font-size: 24px;
+        }
     </style>
 
 </head>
@@ -68,12 +79,14 @@
 </nav>
 
 <!--end of nav-->
+
+
+<div class="text-center container-padding-ca">
+    <h2 class="page-title-ca">Contact Form</h2>
+</div>
+
+
 <div class="container">
-
-    <div class="text-center container-padding-ca">
-        <h2 class="page-title-ca">Contact Form</h2>
-    </div>
-
 
     <div class="container">
         <div class="row">
@@ -85,7 +98,7 @@
                                 <div class="form-group">
                                     <label for="name">
                                         Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter name"/>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name"  />
                                 </div>
                                 <div class="form-group">
                                     <label for="email">
@@ -93,18 +106,16 @@
                                     <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email"/>
-                                    </div>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email"  /></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="subject">
-                                        Region</label>
-                                    <select id="subject" name="Region" class="form-control">
+                                        Subject</label>
+                                    <select id="subject" name="subject" class="form-control" >
                                         <option value="na" selected="">Choose One:</option>
-                                        <option value="service">Leinster</option>
-                                        <option value="suggestions">Munster</option>
-                                        <option value="product">Connacht</option>
-                                        <option value="product">Ulster</option>
+                                        <option value="service">General Customer Service</option>
+                                        <option value="suggestions">Suggestions</option>
+                                        <option value="product">Product Support</option>
                                     </select>
                                 </div>
                             </div>
@@ -116,32 +127,28 @@
                                               placeholder="Message"></textarea>
                                 </div>
                             </div>
-
+                            <div class="col-md-12">
+                                <button  class=" pull-right submit-my-form" aria-label="Try me! Example: input type email">
+                                    Send Message</button>
+                            </div>
                         </div>
                     </form>
-                    <div class="col-md-12">
-                        <button class="btn btn-primary pull-right submit-my-form"
-                                aria-label="Try me! Example: input type email">
-                            Send Message
-                        </button>
-                    </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <form>
-                    <h4 class="hvr-bounce-in"><i class="fa fa-globe"></i> Our Location </h4>
-
+                    <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
                     <address>
-                        <strong>IT Tallaght.</strong><br>
-                        123 Tallaght road<br>
-                        Dublin 24<br>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
                         <abbr title="Phone">
                             P:</abbr>
-                        (01) 123-4567
+                        (123) 456-7890
                     </address>
                     <address>
-                        <strong>Kevin Lambe</strong><br>
-                        <a href="mailto:#">kevin.lambe@it-tallaght.ie</a>
+                        <strong>Full Name</strong><br>
+                        <a href="mailto:#">first.last@example.com</a>
                     </address>
                 </form>
             </div>
@@ -149,26 +156,25 @@
     </div>
 
 
+
     <div class="container myMap">
-        <div style="width: 100%">
-            <iframe width="100%" height="600"
-                    src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&coord=53.291061,-6.3673711&q=Institute%20of%20Technology%20Tallaght+(Contact%20us)&ie=UTF8&t=&z=14&iwloc=A&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                <a href="https://www.mapsdirections.info/en/custom-google-maps/">www.mapsdirections.info</a>
-                by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe>
-        </div>
-        <br/>
-
-
+    <div style="width: 100%">
+        <iframe width="100%" height="600"
+                src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&coord=53.291061,-6.3673711&q=Institute%20of%20Technology%20Tallaght+(Contact%20us)&ie=UTF8&t=&z=14&iwloc=A&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            <a href="https://www.mapsdirections.info/en/custom-google-maps/">www.mapsdirections.info</a>
+            by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe>
     </div>
-</div>
+    <br/>
 
+
+</div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
     <p>Kevin Lambe CA2</p>
 </footer>
-<!--<script src="js/myscripts.js"></script>-->
+<script src="js/myscripts.js"></script>
 
 <script>
     $('.input-type-email').on('click', function () {
@@ -222,6 +228,8 @@
             )
         }).catch(swal.noop)
     })
+
+
 
 
 </script>

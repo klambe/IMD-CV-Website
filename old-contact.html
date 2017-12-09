@@ -14,10 +14,6 @@
 
     <script src="js/sweetalert2.all.min.js"></script>
 
-    <style>
-
-
-    </style>
 
 </head>
 <body>
@@ -53,7 +49,7 @@
                 <a class="nav-link hvr-bounce-in" href="interests.html"><i class="fa  fa-graduation-cap"></i> Interests</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-bounce-in " href="contact.html"><i class="fa  fa-envelope"></i> Contact</a>
+                <a class="nav-link hvr-bounce-in " href="old-contact.html"><i class="fa  fa-envelope"></i> Contact</a>
             </li>
 
         </ul>
@@ -68,107 +64,58 @@
 </nav>
 
 <!--end of nav-->
-<div class="container">
-
-    <div class="text-center container-padding-ca">
-        <h2 class="page-title-ca">Contact Form</h2>
-    </div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="well well-sm">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">
-                                        Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter name"/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">
-                                        Email Address</label>
-                                    <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email"/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="subject">
-                                        Region</label>
-                                    <select id="subject" name="Region" class="form-control">
-                                        <option value="na" selected="">Choose One:</option>
-                                        <option value="service">Leinster</option>
-                                        <option value="suggestions">Munster</option>
-                                        <option value="product">Connacht</option>
-                                        <option value="product">Ulster</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">
-                                        Message</label>
-                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25"
-                                              placeholder="Message"></textarea>
-                                </div>
-                            </div>
-
-                        </div>
-                    </form>
-                    <div class="col-md-12">
-                        <button class="btn btn-primary pull-right submit-my-form"
-                                aria-label="Try me! Example: input type email">
-                            Send Message
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <form>
-                    <h4 class="hvr-bounce-in"><i class="fa fa-globe"></i> Our Location </h4>
-
-                    <address>
-                        <strong>IT Tallaght.</strong><br>
-                        123 Tallaght road<br>
-                        Dublin 24<br>
-                        <abbr title="Phone">
-                            P:</abbr>
-                        (01) 123-4567
-                    </address>
-                    <address>
-                        <strong>Kevin Lambe</strong><br>
-                        <a href="mailto:#">kevin.lambe@it-tallaght.ie</a>
-                    </address>
-                </form>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container myMap">
-        <div style="width: 100%">
-            <iframe width="100%" height="600"
-                    src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&coord=53.291061,-6.3673711&q=Institute%20of%20Technology%20Tallaght+(Contact%20us)&ie=UTF8&t=&z=14&iwloc=A&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                <a href="https://www.mapsdirections.info/en/custom-google-maps/">www.mapsdirections.info</a>
-                by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe>
-        </div>
-        <br/>
-
-
-    </div>
+<div class="text-center container-padding-ca">
+    <h2 class="page-title-ca">Contact Form</h2>
 </div>
 
+
+<div class="container">
+    <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input class="contact-form" type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input class="contact-form" type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">County</label>
+        <select class="contact-form" id="country" name="country">
+            <option value="australia">Dublin</option>
+            <option value="canada">Galway</option>
+            <option value="usa">Limerick</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea class="contact-form" id="subject" name="subject" placeholder="Write something.."
+                  style="height:200px"></textarea>
+
+
+    </form>
+    <button class="submit-my-form float-right hvr-wobble-vertical" aria-label="Try me! Example: input type email">
+        Submit!
+    </button>
+</div>
+
+
+<div class="container myMap">
+    <div style="width: 100%">
+        <iframe width="100%" height="600"
+                src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&coord=53.291061,-6.3673711&q=Institute%20of%20Technology%20Tallaght+(Contact%20us)&ie=UTF8&t=&z=14&iwloc=A&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            <a href="https://www.mapsdirections.info/en/custom-google-maps/">www.mapsdirections.info</a>
+            by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe>
+    </div>
+    <br/>
+
+
+</div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
     <p>Kevin Lambe CA2</p>
 </footer>
-<!--<script src="js/myscripts.js"></script>-->
+<script src="js/myscripts.js"></script>
 
 <script>
     $('.input-type-email').on('click', function () {
@@ -223,6 +170,12 @@
         }).catch(swal.noop)
     })
 
+
+    //    $(document).ready(function(){
+    //        $("#toggle-map").click(function(){
+    //            $(".myMap").toggle();
+    //        });
+    //    });
 
 </script>
 
