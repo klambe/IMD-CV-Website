@@ -33,3 +33,9 @@ body {
         height: 400px;
     }
 }
+
+
+.card-body{
+    width: 100%;
+    height: auto;
+}
