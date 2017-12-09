@@ -108,3 +108,21 @@ body {
     font-weight: bold;
     color: #2d7788;
 }
+
+
+.footer-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+#footer {
+    background-color: #2d7788;
+    color: whitesmoke;
+}
+
+.img-skill-logo {
+    width: auto;
+    height: 150px;
+    padding: 1em;
+}
