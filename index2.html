@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href="css/hover/hover.css" rel="stylesheet" media="all">
+    <!--<link href="css/weather.css" rel="stylesheet" media="all">-->
 
     <script src="js/sweetalert2.all.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/plugins/weather/simpleWeather.css"> <!-- SimpleWeather -->
 
 
     <style>
@@ -74,13 +77,11 @@
             color: whitesmoke;
         }
 
-        .img-skill-logo{
+        .img-skill-logo {
             width: auto;
             height: 150px;
             padding: 1em;
         }
-
-
 
 
     </style>
@@ -211,23 +212,32 @@
         <div class="row" style="padding-top:25px">
             <div class="col-md-4 col-lg-4 footer-content">
                 <div class="ca-pad">
-                    <h4>Links</h4>
-                    <img src="img/skills/weather.svg" class="img-skill-logo hvr-rotate">
+                    <h4>Local Information</h4>
+                    <div id="weather"></div>
+                    <iframe src="http://free.timeanddate.com/clock/i60mcwia/n78/tlie50/fs24/fcfff/tct/pct/tt1/tw0/tm3" frameborder="0" width="123" height="30" allowTransparency="true"></iframe>
 
-                    <a href="404.html" target="_blank"><i
-                            class="kevin-links fa  fa-exclamation-triangle  my-ca my-ca-footer hvr-wobble-vertical"></i></a>
-                    <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i
-                            class="kevin-links fa fa-linkedin my-ca my-ca-footer hvr-wobble-vertical"></i></a>
-                    <a href="https://twitter.com/" target="_blank"><i
-                            class="kevin-links fa fa-twitter my-ca my-ca-footer hvr-wobble-vertical"></i></a>
+                    <h4 id="time"></h4>
+
+
 
                 </div>
             </div>
             <div class="col-md-4 col-lg-4 footer-content">
                 <div class="ca-pad">
-                    <h4>Links</h4>
-                    <img src="img/skills/slackdroid.png" class="img-skill-logo hvr-rotate">
+                    <h4>Social Media</h4>
 
+                    <a href="https://github.com/klambe" target="_blank"><i
+                            class="kevin-links fa fa-github my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i
+                            class="kevin-links fa fa-linkedin my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i
+                            class="kevin-links fa fa-twitter my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://github.com/klambe" target="_blank"><i
+                            class="kevin-links fa fa-github my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i
+                            class="kevin-links fa fa-linkedin my-ca hvr-wobble-vertical"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i
+                            class="kevin-links fa fa-twitter my-ca hvr-wobble-vertical"></i></a>
                     <a href="https://github.com/klambe" target="_blank"><i
                             class="kevin-links fa fa-github my-ca hvr-wobble-vertical"></i></a>
                     <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i
@@ -242,12 +252,9 @@
                     <h4>Contact</h4>
                     <img src="img/skills/mail.png" class="img-skill-logo hvr-rotate input-type-multiple">
 
-                    <a href="https://github.com/klambe" target="_blank"><i
-                            class="kevin-links fa fa-github my-ca hvr-wobble-vertical"></i></a>
-                    <a href="https://www.linkedin.com/in/kevinlambeitt/" target="_blank"><i
-                            class="kevin-links fa fa-linkedin my-ca hvr-wobble-vertical"></i></a>
-                    <a href="https://twitter.com/" target="_blank"><i
-                            class="kevin-links fa fa-twitter my-ca hvr-wobble-vertical"></i></a>
+                    <img src="img/skills/mail.png" class="img-skill-logo hvr-rotate input-type-multiple">
+
+
 
                 </div>
             </div>
@@ -258,8 +265,12 @@
         <div class="col-md-12 col-lg-12 footer-content">
             <br/>
             <div id="sfcb2acau5ens3sbj456qbkqh3qtj4ez6qh"></div>
-            <script type="text/javascript" src="https://counter2.freecounter.ovh/private/counter.js?c=b2acau5ens3sbj456qbkqh3qtj4ez6qh&down=async" async></script>
-            <noscript><a href="https://www.freecounterstat.com" title="website view counter"><img src="https://counter2.freecounter.ovh/private/freecounterstat.php?c=b2acau5ens3sbj456qbkqh3qtj4ez6qh" border="0" title="website view counter" alt="website view counter"></a></noscript>
+            <script type="text/javascript"
+                    src="https://counter2.freecounter.ovh/private/counter.js?c=b2acau5ens3sbj456qbkqh3qtj4ez6qh&down=async"
+                    async></script>
+            <noscript><a href="https://www.freecounterstat.com" title="website view counter"><img
+                    src="https://counter2.freecounter.ovh/private/freecounterstat.php?c=b2acau5ens3sbj456qbkqh3qtj4ez6qh"
+                    border="0" title="website view counter" alt="website view counter"></a></noscript>
 
         </div>
     </div>
@@ -321,6 +332,28 @@
 </script>
 
 <script type="text/javascript" src="js/search.js"></script>
+<!-- Weather -->
+<script src="plugins/weather/jquery.simpleWeather.min.js"></script>
+<script type="text/javascript" src="js/weather.js"></script>
+
+
+<script>
+    var fxn = function() {
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        hours = n.getHours();
+        min = n.getMinutes();
+        sec = n.getSeconds();
+        document.getElementById("time").innerHTML = hours + ":" + min + ":" + sec;
+    }
+    setInterval(fxn, 1000);
+
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
+
+</script>
 
 </body>
 </html>
